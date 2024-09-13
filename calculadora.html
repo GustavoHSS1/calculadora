@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calculadora</title>
-  <link rel="stylesheet" href="estilo.css">
    </head>
 
 <body>
@@ -13,132 +12,130 @@
     <h1>Calculadora de Gustavo</h1>
   </div>
 
-  <div>
+  <div class="calculadora">
     <div id="resultado">
       
     </div>
 
     <table>
       <tr>
-        <td class="botao" onclick="clean()">
-          <button>
+        <td onclick="clean()">
+          <button class="botao">
             AC
           </button>
         </td>
         
-        <td class="botao" onclick="back()">
-          <button>
+        <td onclick="back()">
+          <button class="botao">
             T
           </button>
         </td>
         
-        <td class="botao" onclick="insert('/')">
-          <button>
+        <td onclick="insert('/')">
+          <button class="botao">
             /
           </button>
         </td>
         
-        <td class="botao" onclick="insert('*')">
-          <button>
+        <td onclick="insert('*')">
+          <button class="botao">
             X
           </button>
         </td>
       </tr>
       
       <tr>
-        <td class="botao" onclick="insert('7')">
-          <button>
+        <td onclick="insert('7')">
+          <button class="botao">
             7
           </button>
         </td>
         
-        <td class="botao" onclick="insert('8')">
-          <button>
+        <td onclick="insert('8')">
+          <button class="botao">
             8
           </button>
         </td>
         
-        <td class="botao" onclick="insert('9')">
-          <button>
+        <td onclick="insert('9')">
+          <button class="botao">
             9
           </button>
         </td>
         
-        <td class="botao" onclick="insert('-')">
-          <button>
+        <td onclick="insert('-')">
+          <button class="botao">
             -
           </button>
         </td>
       </tr>
 
       <tr>
-        <td class="botao" onclick="insert('4')">
-          <button>
+        <td onclick="insert('4')">
+          <button class="botao">
             4
           </button>
         </td>
         
-        <td class="botao" onclick="insert('5')">
-          <button>
+        <td onclick="insert('5')">
+          <button class="botao">
             5
           </button>
         </td>
         
-        <td class="botao" onclick="insert('6')">
-          <button>
+        <td onclick="insert('6')">
+          <button class="botao">
             6    
           </button>
         </td>
         
-        <td class="botao" onclick="insert('+')">
-          <button>
+        <td onclick="insert('+')">
+          <button class="botao">
             +
           </button>
         </td>
       </tr>
 
       <tr>
-        <td class="botao" onclick="insert('1')">
-          <button>
+        <td onclick="insert('1')">
+          <button class="botao">
             1
           </button>
         </td>
         
-        <td class="botao" onclick="insert('2')">
-          <button>
+        <td onclick="insert('2')">
+          <button class="botao">
             2
           </button>
         </td>
         
-        <td class="botao" onclick="insert('3')">
-          <button>
+        <td onclick="insert('3')">
+          <button class="botao">
             3
           </button>
         </td>
         
-        <td class="botao" onclick="calcular()">
-          <button>
+        <td rowspan="2" onclick="calcular()">
+          <button class="botao" style="height: 106px;">
             =
           </button>
         </td>
       </tr>
 
       <tr>
-        <td class="botao" onclick="insert('0')">
-          <button>
+        <td colspan="2" onclick="insert('0')">
+          <button class="botao" style="width: 106px;">
             0
           </button>
         </td>
         
-        <td class="botao" onclick="insert('.')">
-          <button>
+        <td onclick="insert('.')">
+          <button class="botao">
             .
           </button>
         </td>
       </tr>
     </table>
   </div>
-
-  <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
